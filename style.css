@@ -1,0 +1,82 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+  color: #654B40;
+}
+
+/* 首頁主視覺 */
+.homepage {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+}
+
+.homepage img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 圖片上的透明點擊區 */
+.hotspot {
+  position: absolute;
+  left: 2%;
+  width: 24%;
+  height: 7%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.hotspot:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+.hotspot:focus-visible {
+  outline: 2px solid #654B40;
+}
+
+/* 四個選單位置 */
+.new {
+  top: 18.5%;
+}
+
+.women {
+  top: 25%;
+}
+
+.men {
+  top: 31.5%;
+}
+
+.sale {
+  top: 38%;
+}
+
+/* 下方分類區 */
+section:not(.homepage) {
+  min-height: 65vh;
+  padding: 90px 30px;
+  text-align: center;
+  background: #F8F3F3;
+}
+
+section:nth-child(odd):not(.homepage) {
+  background: #D6EAF2;
+}
+
+h2 {
+  font-family: Georgia, serif;
+  font-size: 42px;
+  font-weight: normal;
+}
