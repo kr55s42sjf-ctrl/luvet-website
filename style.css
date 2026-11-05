@@ -3,80 +3,72 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
-  background: #ffffff;
   font-family: Arial, sans-serif;
   color: #654B40;
+  background: #C8E4F0;
 }
 
-/* 首頁主視覺 */
-.homepage {
-  position: relative;
-  width: 100%;
-  max-width: 1920px;
-  margin: auto;
+header {
+  padding: 24px;
+  background: #ffffff99;
 }
 
-.homepage img {
-  display: block;
-  width: 100%;
-  height: auto;
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
 }
 
-/* 圖片上的透明點擊區 */
-.hotspot {
-  position: absolute;
-  left: 2%;
-  width: 24%;
-  height: 7%;
-  cursor: pointer;
-  z-index: 2;
+nav a {
+  color: #654B40;
+  text-decoration: none;
+  font-size: 13px;
 }
 
-.hotspot:hover {
-  background: rgba(255,255,255,0.15);
-}
-
-.hotspot:focus-visible {
-  outline: 2px solid #654B40;
-}
-
-/* 四個選單位置 */
-.new {
-  top: 18.5%;
-}
-
-.women {
-  top: 25%;
-}
-
-.men {
-  top: 31.5%;
-}
-
-.sale {
-  top: 38%;
-}
-
-/* 下方分類區 */
-section:not(.homepage) {
-  min-height: 65vh;
-  padding: 90px 30px;
+.hero {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  background: #F8F3F3;
+  background: radial-gradient(
+    circle at center,
+    #ffffffaa,
+    #C8E4F0 75%
+  );
 }
 
-section:nth-child(odd):not(.homepage) {
-  background: #D6EAF2;
-}
-
-h2 {
+h1 {
   font-family: Georgia, serif;
-  font-size: 42px;
+  font-size: clamp(70px, 12vw, 140px);
   font-weight: normal;
+  margin: 0;
+}
+
+.hero p {
+  letter-spacing: 5px;
+}
+
+button {
+  margin-top: 28px;
+  background: #F2D5DE;
+  color: #654B40;
+  border: 1px solid #654B40;
+  border-radius: 30px;
+  padding: 15px 36px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #654B40;
+  color: white;
+}
+
+#collection {
+  padding: 80px 20px;
+  text-align: center;
 }
